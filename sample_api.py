@@ -15,6 +15,16 @@ class GetProducts(Resource):
 api.add_resource(GetProducts, '/getProducts')
 
 
+
+class GetRootPage(Resource):
+    def get(self):
+        return {'hello': 'root'}
+        
+ 
+             
+api.add_resource(GetRootPage, '/')
+
+
             
 if __name__ == '__main__':
     app.run(debug=True)
