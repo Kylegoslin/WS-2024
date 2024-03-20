@@ -19,8 +19,8 @@ def checkServiceForWord(url, keyword):
         return False
 
 
-url = 'https://jsonplaceholder.typicode.com/todos/1'
-result = checkServiceForWord(url, 'userId')
+url = 'http://localhost:5000/'
+result = checkServiceForWord(url, 'root')
 
 print(result)
 
